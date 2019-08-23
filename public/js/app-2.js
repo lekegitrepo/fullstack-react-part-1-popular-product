@@ -8,11 +8,6 @@ class ProductList extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <ProductList />,
-  document.getElementById('content')
-);
-
 class Product extends React.Component {
   render() {
     return (
@@ -27,10 +22,15 @@ class Product extends React.Component {
           </div>
           <div className='extra'>
             <span> Submitted by:</span>
-            <img className='ui avatar image' src='images/avatars/daniel.jpg'/>
+            <img className='ui avatar image' src='../images/avatars/daniel.jpg'/>
           </div>
         </div>
      </div>
    );
   }
 }
+
+ReactDOM.render(
+  <ProductList />,
+  document.getElementById('content')
+);
